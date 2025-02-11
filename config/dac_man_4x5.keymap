@@ -10,25 +10,37 @@
 
         base {
             bindings = <
-&kp Q  &kp W           &kp F            &kp P           &kp B                             &kp J         &kp L  &kp U         &kp Y           &kp SEMICOLON
-&kp A  &kp R           &kp S            &kp T           &kp G                             &kp M         &kp N  &kp E         &kp I           &kp O
-&kp Z  &kp X           &kp C            &kp D           &kp V                             &kp K         &kp H  &kp COMMA     &kp DOT         &kp FSLH
-       &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                         &kp UP_ARROW  &kp DOWN_ARROW
-                                        &kp LEFT_SHIFT                                                  &mo 1
-                                                        &kp SPACE  &kp TAB  &kp BSPC      &kp ENTER
-                                                        &kp LCTRL  &mo 2    &kp LEFT_GUI  &kp LEFT_ALT
+&kp Q  &kp W           &kp F            &kp P  &kp B                             &kp J         &kp L  &kp U         &kp Z           &kp MINUS
+&kp A  &kp R           &kp S            &kp T  &kp G                             &kp M         &kp N  &kp E         &kp I           &kp O
+&kp Y  &kp X           &kp C            &kp D  &kp V                             &kp K         &kp H  &kp COMMA     &kp DOT         &kp LS(NON_US_BACKSLASH)
+       &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                &kp UP_ARROW  &kp DOWN_ARROW
+                                        &mo 1                                                  &mo 2
+                                               &kp SPACE  &kp TAB  &kp BSPC      &kp ENTER
+                                               &kp LCTRL  &mo 3    &kp LEFT_GUI  &kp LEFT_ALT
+            >;
+        };
+
+        shift {
+            bindings = <
+&kp LS(Q)  &kp LS(W)     &kp LS(F)      &kp LS(P)  &kp LS(B)                                     &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Z)                 &kp SEMICOLON
+&kp LS(A)  &kp LS(R)     &kp LS(S)      &kp LS(T)  &kp LS(G)                                     &kp LS(M)         &kp LS(N)  &kp LS(E)             &kp LS(I)                 &kp LS(O)
+&kp LS(Y)  &kp LS(X)     &kp LS(C)      &kp LS(D)  &kp LS(V)                                     &kp LS(K)         &kp LS(H)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp LS(N2)
+           &kp LS(LEFT)  &kp LS(RIGHT)                                                                                        &kp LS(UP_ARROW)      &kp LS(DOWN)
+                                        &trans                                                                     &mo 2
+                                                   &kp LS(SPACE)  &kp LS(TAB)  &kp LS(BSPC)      &kp LS(ENTER)
+                                                   &kp LS(LCTRL)  &mo 3        &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
             >;
         };
 
         symbols {
             bindings = <
-&kp LS(N1)        &kp LS(MINUS)         &kp RA(N7)  &kp RA(N0)  &kp RA(E)                  &kp LS(N7)                &kp N7  &kp N8  &kp N9        &kp LS(RIGHT_BRACKET)
-&kp LS(NUMBER_6)  &kp NON_US_BACKSLASH  &kp LS(N8)  &kp LS(N9)  &trans                     &kp LS(NON_US_BACKSLASH)  &kp N4  &kp N5  &kp NUMBER_6  &kp RIGHT_BRACKET
-&kp LS(N4)        &kp LS(N5)            &kp RA(N8)  &kp RA(N9)  &trans                     &kp N0                    &kp N1  &kp N2  &kp N3        &kp LS(N0)
-                  &trans                &trans                                                                               &trans  &trans
-                                                    &trans                                                           &trans
-                                                                &trans     &trans  &trans  &trans
-                                                                &trans     &trans  &trans  &trans
+&kp LS(N1)        &kp LS(MINUS)         &kp RA(N7)  &kp RA(N0)  &kp RA(E)                          &kp LS(N7)                &kp N7  &kp N8  &kp N9        &kp LS(RIGHT_BRACKET)
+&kp LS(NUMBER_6)  &kp NON_US_BACKSLASH  &kp LS(N8)  &kp LS(N9)  &kp LS(N7)                         &kp LS(NON_US_BACKSLASH)  &kp N4  &kp N5  &kp NUMBER_6  &kp RIGHT_BRACKET
+&kp LS(N4)        &kp LS(N5)            &kp RA(N8)  &kp RA(N9)  &kp LS(SEMICOLON)                  &kp N0                    &kp N1  &kp N2  &kp N3        &kp LS(N0)
+                  &trans                &trans                                                                                       &trans  &trans
+                                                    &trans                                                                   &trans
+                                                                &trans             &trans  &trans  &trans
+                                                                &trans             &trans  &trans  &trans
             >;
         };
 
