@@ -1,0 +1,23 @@
+if SHIELD_DAC_MAN_4X5_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Dac-Man-4x5-L"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DAC_MAN_4X5_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Dac-Man-4x5-R"
+
+endif
+
+if SHIELD_DAC_MAN_4X5_LEFT || SHIELD_DAC_MAN_4X5_RIGHT
+
+config ZMK_SPLIT
+    default y
+endif
+
