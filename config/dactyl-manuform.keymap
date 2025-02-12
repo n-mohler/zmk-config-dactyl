@@ -10,13 +10,13 @@
 
         base {
             bindings = <
-&kp Q  &kp W           &kp F            &kp P  &kp B                             &kp J         &kp L  &kp U         &kp Z           &kp MINUS
-&kp A  &kp R           &kp S            &kp T  &kp G                             &kp M         &kp N  &kp E         &kp I           &kp O
-&kp Y  &kp X           &kp C            &kp D  &kp V                             &kp K         &kp H  &kp COMMA     &kp DOT         &kp LS(NON_US_BACKSLASH)
-       &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                &kp UP_ARROW  &kp DOWN_ARROW
-                                        &mo 1                                                  &mo 2
-                                               &kp SPACE  &kp TAB  &kp BSPC      &kp ENTER
-                                               &kp LCTRL  &mo 3    &kp LEFT_GUI  &kp LEFT_ALT
+&kp Q  &kp W           &kp F            &kp P  &kp B                &kp J  &kp L  &kp U         &kp Z           &kp MINUS
+&kp A  &kp R           &kp S            &kp T  &kp G                &kp M  &kp N  &kp E         &kp I           &kp O
+&kp Y  &kp X           &kp C            &kp D  &kp V                &kp K  &kp H  &kp COMMA     &kp DOT         &kp LS(NON_US_BACKSLASH)
+       &kp LEFT_ARROW  &kp RIGHT_ARROW                                            &kp UP_ARROW  &kp DOWN_ARROW
+                                        &kp A                              &kp A
+                                               &kp B  &kp C  &kp C  &kp B
+                                               &kp D  &kp E  &kp E  &kp D
             >;
         };
 
