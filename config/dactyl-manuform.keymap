@@ -10,7 +10,7 @@
 
         base {
             bindings = <
-&kp Q  &kp W           &kp F            &kp P  &kp B                                  &kp J             &kp L  &kp U         &kp Z           &kp LS(COMMA)
+&kp Q  &kp W           &kp F            &kp P  &kp B                                  &kp J             &kp L  &kp U         &kp Z           &kp LS(NUMBER_7)
 &kp A  &kp R           &kp S            &kp T  &kp G                                  &kp M             &kp N  &kp E         &kp I           &kp O
 &kp Y  &kp X           &kp C            &kp D  &kp V                                  &kp K             &kp H  &kp COMMA     &kp DOT         &kp LS(NUHS)
        &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                         &kp UP_ARROW  &kp DOWN_ARROW
@@ -34,10 +34,10 @@
 
         symbols {
             bindings = <
-&kp LS(NUMBER_1)  &kp RA(Q)      &kp NUHS          &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                  &kp GRAVE       &kp LS(NUMBER_6)  &kp RA(RIGHT_BRACKET)  &trans             &trans
-&kp RA(NUBS)      &kp RA(GRAVE)  &kp RA(NUMBER_8)  &kp LS(NUMBER_8)  &kp RA(NUMBER_7)                  &kp LS(PERIOD)  &kp LS(SLASH)     &kp LS(NUMBER_0)       &kp RIGHT_BRACKET  &trans
-&kp NUBS          &kp LS(NUBS)   &kp RA(NUMBER_9)  &kp LS(NUMBER_9)  &kp RA(NUMBER_0)                  &kp RA(NUBS)    &kp SLASH         &kp LS(COMMA)          &trans             &kp RA(MINUS)
-                  &kp HOME       &kp END                                                                                                 &kp PAGE_UP            &kp PAGE_DOWN
+&kp LS(NUMBER_1)  &kp RA(Q)      &kp NUHS          &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                  &kp GRAVE       &kp LS(NUMBER_6)  &trans            &trans             &kp RA(MINUS)
+&kp RA(NUBS)      &kp RA(GRAVE)  &kp RA(NUMBER_8)  &kp LS(NUMBER_8)  &kp RA(NUMBER_7)                  &kp LS(PERIOD)  &kp LS(SLASH)     &kp LS(NUMBER_0)  &kp RIGHT_BRACKET  &trans
+&kp NUBS          &kp LS(NUBS)   &kp RA(NUMBER_9)  &kp LS(NUMBER_9)  &kp RA(NUMBER_0)                  &kp RA(NUBS)    &kp SLASH         &kp LS(COMMA)     &trans             &trans
+                  &kp HOME       &kp END                                                                                                 &kp PAGE_UP       &kp PAGE_DOWN
                                                    &mo 3                                                               &trans
                                                                      &trans            &trans  &trans  &trans
                                                                      &trans            &trans  &trans  &trans
