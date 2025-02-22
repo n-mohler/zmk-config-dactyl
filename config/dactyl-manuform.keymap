@@ -15,9 +15,9 @@
 &kp A     &kp R           &kp S            &kp T  &kp G                                  &kp M             &kp N  &kp E         &kp I           &kp O
 &kp DE_Z  &kp X           &kp C            &kp D  &kp V                                  &kp K             &kp H  &kp COMMA     &kp DOT         &kp DE_SQT
           &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                         &kp UP_ARROW  &kp DOWN_ARROW
-                                           &mo 0                                                           &mo 4
+                                           &mo 5                                                           &mo 3
                                                   &kp SPACE   &kp TAB  &kp BACKSPACE     &kp ENTER
-                                                  &kp ESCAPE  &mo 5    &kp LEFT_COMMAND  &kp LEFT_CONTROL
+                                                  &kp ESCAPE  &mo 4    &kp LEFT_COMMAND  &kp LEFT_CONTROL
             >;
         };
 
@@ -80,18 +80,30 @@
                                                                &kp RS(LCTRL)  &trans       &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
             >;
         };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans                                                  &trans  &trans
+                        &trans                                  &trans
+                                &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         numpad {
-            if-layers = <6 4>;
+            if-layers = <5 3>;
             then-layer = <1>;
         };
 
         function_condition {
-            if-layers = <4 5>;
+            if-layers = <4 3>;
             then-layer = <2>;
         };
     };
