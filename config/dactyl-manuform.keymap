@@ -15,9 +15,33 @@
 &kp A     &kp R           &kp S            &kp T  &kp G                                  &kp M             &kp N  &kp E         &kp I           &kp O
 &kp DE_Z  &kp X           &kp C            &kp D  &kp V                                  &kp K             &kp H  &kp COMMA     &kp DOT         &kp DE_SQT
           &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                         &kp UP_ARROW  &kp DOWN_ARROW
-                                           &mo 5                                                           &mo 3
+                                           &mo 1                                                           &mo 2
                                                   &kp SPACE   &kp TAB  &kp BACKSPACE     &kp ENTER
                                                   &kp ESCAPE  &mo 4    &kp LEFT_COMMAND  &kp LEFT_CONTROL
+            >;
+        };
+
+        shift {
+            bindings = <
+&kp RS(Q)  &kp RS(W)           &kp RS(F)            &kp RS(P)  &kp RS(B)                                     &kp LS(J)         &kp LS(L)  &kp LS(U)         &kp LS(Z)            &kp DE_QUESTION
+&kp RS(A)  &kp RS(R)           &kp RS(S)            &kp RS(T)  &kp RS(G)                                     &kp LS(M)         &kp LS(N)  &kp LS(E)         &kp LS(I)            &kp LS(O)
+&kp RS(Y)  &kp RS(X)           &kp RS(C)            &kp RS(D)  &kp RS(V)                                     &kp LS(K)         &kp LS(H)  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_DOUBLE_QUOTES
+           &kp RS(LEFT_ARROW)  &kp RS(RIGHT_ARROW)                                                                                        &kp LS(UP_ARROW)  &kp LS(DOWN)
+                                                    &trans                                                                     &trans
+                                                               &kp RS(SPACE)  &kp RS(TAB)  &kp LS(BSPC)      &kp LS(ENTER)
+                                                               &kp RS(LCTRL)  &trans       &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
+            >;
+        };
+
+        symbols {
+            bindings = <
+&kp DE_EXCLAMATION  &kp DE_AT_SIGN       &kp DE_HASH           &kp DE_DOLLAR             &kp DE_PERCENT                      &kp DE_CARET  &kp DE_AMPERSAND   &kp DE_EURO   &trans         &kp DE_BACKSLASH
+&kp DE_GRAVE        &kp DE_TILDE         &kp DE_LEFT_BRACKET   &kp DE_LEFT_PARENTHESIS   &kp DE_LEFT_BRACE                   &kp DE_COLON  &kp DE_UNDERSCORE  &kp DE_EQUAL  &kp DE_ASTRK   &kp DE_SEMICOLON
+&kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE                  &kp DE_PIPE   &kp DE_MINUS       &kp DE_PLUS   &trans         &trans
+                    &kp HOME             &kp END                                                                                                              &kp PAGE_UP   &kp PAGE_DOWN
+                                                               &trans                                                                      &trans
+                                                                                         &trans              &trans  &trans  &trans
+                                                                                         &trans              &trans  &trans  &trans
             >;
         };
 
@@ -33,6 +57,18 @@
             >;
         };
 
+        media {
+            bindings = <
+&kp K_MUTE  &kp C_PLAY_PAUSE   &kp C_PREVIOUS   &kp C_NEXT  &trans                           &trans         &trans               &trans                &trans                &trans
+&kp LC(A)   &kp LC(S)          &trans           &kp LC(F)   &kp LEFT_SHIFT                   &kp DE_ESZETT  &kp DE_O_UMLAUT      &kp DE_A_UMLAUT       &kp DE_U_UMLAUT       &trans
+&kp LC(Y)   &kp LC(X)          &kp LC(C)        &kp LC(V)   &trans                           &trans         &kp LS(DE_O_UMLAUT)  &kp LS(DE_U_UMLAUT)   &kp LS(DE_U_UMLAUT)   &trans
+            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                                                   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+                                                &trans                                                      &trans
+                                                            &trans          &trans  &kp DEL  &trans
+                                                            &trans          &trans  &trans   &trans
+            >;
+        };
+
         function {
             bindings = <
 &bt BT_CLR    &trans        &trans        &trans        &trans                        &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
@@ -44,43 +80,19 @@
                                                         &trans        &trans  &trans  &trans
             >;
         };
-
-        symbols {
-            bindings = <
-&kp DE_EXCLAMATION  &kp DE_AT_SIGN       &kp DE_HASH           &kp DE_DOLLAR             &kp DE_PERCENT                      &kp DE_CARET  &kp DE_AMPERSAND   &kp DE_EURO   &trans         &kp DE_BACKSLASH
-&kp DE_GRAVE        &kp DE_TILDE         &kp DE_LEFT_BRACKET   &kp DE_LEFT_PARENTHESIS   &kp DE_LEFT_BRACE                   &kp DE_COLON  &kp DE_UNDERSCORE  &kp DE_EQUAL  &kp DE_ASTRK   &kp DE_SEMICOLON
-&kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE                  &kp DE_PIPE   &kp DE_MINUS       &kp DE_PLUS   &trans         &trans
-                    &kp HOME             &kp END                                                                                                              &kp PAGE_UP   &kp PAGE_DOWN
-                                                               &mo 1                                                                       &trans
-                                                                                         &trans              &trans  &trans  &trans
-                                                                                         &trans              &trans  &trans  &trans
-            >;
-        };
-
-        media {
-            bindings = <
-&kp K_MUTE  &kp C_PLAY_PAUSE   &kp C_PREVIOUS   &kp C_NEXT  &trans                           &trans         &trans               &trans                &trans                &trans
-&kp LC(A)   &kp LC(S)          &trans           &kp LC(F)   &kp LEFT_SHIFT                   &kp DE_ESZETT  &kp DE_O_UMLAUT      &kp DE_A_UMLAUT       &kp DE_U_UMLAUT       &trans
-&kp LC(Y)   &kp LC(X)          &kp LC(C)        &kp LC(V)   &trans                           &trans         &kp LS(DE_O_UMLAUT)  &kp LS(DE_U_UMLAUT)   &kp LS(DE_U_UMLAUT)   &trans
-            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                                                   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-                                                &trans                                                      &mo 2
-                                                            &trans          &trans  &kp DEL  &trans
-                                                            &trans          &trans  &trans   &trans
-            >;
-        };
-
-        shift {
-            bindings = <
-&kp RS(Q)  &kp RS(W)           &kp RS(F)            &kp RS(P)  &kp RS(B)                                     &kp LS(J)         &kp LS(L)  &kp LS(U)         &kp LS(Z)            &kp DE_QUESTION
-&kp RS(A)  &kp RS(R)           &kp RS(S)            &kp RS(T)  &kp RS(G)                                     &kp LS(M)         &kp LS(N)  &kp LS(E)         &kp LS(I)            &kp LS(O)
-&kp RS(Y)  &kp RS(X)           &kp RS(C)            &kp RS(D)  &kp RS(V)                                     &kp LS(K)         &kp LS(H)  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_DOUBLE_QUOTES
-           &kp RS(LEFT_ARROW)  &kp RS(RIGHT_ARROW)                                                                                        &kp LS(UP_ARROW)  &kp LS(DOWN)
-                                                    &trans                                                                     &mo 1
-                                                               &kp RS(SPACE)  &kp RS(TAB)  &kp LS(BSPC)      &kp LS(ENTER)
-                                                               &kp RS(LCTRL)  &trans       &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
-            >;
-        };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        numpad {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        function {
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+    };
 };
