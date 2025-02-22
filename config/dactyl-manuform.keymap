@@ -10,7 +10,7 @@
         ts: tap-shift {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_SHIFT";
-            bindings = <&kp>, <&lt>;
+            bindings = <&kp>, <&mo>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
@@ -40,7 +40,7 @@
 &kp RS(A)  &kp RS(R)           &kp RS(S)            &kp RS(T)  &kp RS(G)                                     &kp LS(M)         &kp LS(N)  &kp LS(E)         &kp LS(I)            &kp LS(O)
 &kp RS(Y)  &kp RS(X)           &kp RS(C)            &kp RS(D)  &kp RS(V)                                     &kp LS(K)         &kp LS(H)  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_DOUBLE_QUOTES
            &kp RS(LEFT_ARROW)  &kp RS(RIGHT_ARROW)                                                                                        &kp LS(UP_ARROW)  &kp LS(DOWN)
-                                                    &none                                                                      &mo 3
+                                                    &trans                                                                     &mo 3
                                                                &kp RS(SPACE)  &kp RS(TAB)  &kp LS(BSPC)      &kp LS(ENTER)
                                                                &kp RS(LCTRL)  &trans       &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
             >;
