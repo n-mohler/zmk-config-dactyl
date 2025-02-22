@@ -1,7 +1,7 @@
 if SHIELD_DACTYL_MANUFORM_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "DactylManuform-L"
+    default "Dactyl-Manuform"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
