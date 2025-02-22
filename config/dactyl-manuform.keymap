@@ -80,18 +80,6 @@
                                                                &kp RS(LCTRL)  &trans       &kp LS(LEFT_GUI)  &kp LS(LEFT_ALT)
             >;
         };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans                                                  &trans  &trans
-                        &trans                                  &trans
-                                &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
