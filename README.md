@@ -8,7 +8,6 @@ This is my current ZMK config for a Dactyl Manuform 4x5 with a 5 button thumb cl
 3. Edit the keymap [here](https://nickcoutsos.github.io/keymap-editor/).
 
 
-
 ### TODO:
 - Optimize keymap
 - create a good cheat sheet
