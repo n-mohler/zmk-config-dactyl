@@ -54,7 +54,7 @@
         };
 
         combo_quit {
-            bindings = <&kp LG(Q)>;
+            bindings = <&kp LC(Q)>;
             key-positions = <1 0>;
             timeout-ms = <40>;
             layers = <0>;
@@ -79,6 +79,16 @@
             key-positions = <17 28>;
             timeout-ms = <40>;
             layers = <0>;
+        };
+
+        combo_close_tab {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 2>;
+        };
+
+        combo_select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <11 13>;
         };
     };
 
