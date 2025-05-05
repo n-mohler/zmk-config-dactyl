@@ -18,14 +18,14 @@
 
         combo_paste {
             bindings = <&kp LC(V)>;
-            key-positions = <22 13>;
+            key-positions = <22 23>;
             layers = <0>;
             timeout-ms = <40>;
         };
 
-        combo_ctrl_b {
-            bindings = <&kp LC(B)>;
-            key-positions = <11 12>;
+        combo_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <21 23>;
             layers = <0>;
             timeout-ms = <40>;
         };
@@ -36,28 +36,15 @@
             layers = <0>;
         };
 
-        del {
+        combo_del {
             bindings = <&kp DELETE>;
             key-positions = <26 27>;
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        return {
-            bindings = <&kp RETURN>;
-            key-positions = <17 18>;
-            layers = <0>;
+        combo_undo {
+            bindings = <&kp LC(DE_Z)>;
+            key-positions = <11 12>;
         };
     };
 
@@ -66,13 +53,13 @@
 
         base {
             bindings = <
-&kp Q     &kp W           &kp F            &kp P      &kp B                                        &kp J      &kp L  &kp U         &kp DE_Y        &kp DE_SINGLE_QUOTE
-&kp A     &kp R           &kp S            &kp T      &kp G                                        &kp M      &kp N  &kp E         &kp I           &kp O
-&kp DE_Z  &kp X           &kp C            &kp D      &kp V                                        &kp K      &kp H  &kp COMMA     &kp DOT         &kp DE_SLASH
-          &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                            &kp UP_ARROW  &kp DOWN_ARROW
-                                           &kp ENTER                                                          &mo 2
-                                                      &mo 1       &kp BACKSPACE  &key_repeat       &kp SPACE
-                                                      &kp ESCAPE  &kp TAB        &kp LEFT_COMMAND  &mo 3
+&kp Q     &kp W           &kp F            &kp P      &kp B                                      &kp J      &kp L  &kp U         &kp DE_Y        &kp DE_SINGLE_QUOTE
+&kp A     &kp R           &kp S            &kp T      &kp G                                      &kp M      &kp N  &kp E         &kp I           &kp O
+&kp DE_Z  &kp X           &kp C            &kp D      &kp V                                      &kp K      &kp H  &kp COMMA     &kp DOT         &kp DE_SLASH
+          &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                          &kp UP_ARROW  &kp DOWN_ARROW
+                                           &kp ENTER                                                        &mo 2
+                                                      &mo 1       &kp BACKSPACE     &key_repeat  &kp SPACE
+                                                      &kp ESCAPE  &kp LEFT_COMMAND  &kp TAB      &mo 3
             >;
         };
 
@@ -90,13 +77,13 @@
 
         symbols {
             bindings = <
-&kp DE_TILDE      &kp DE_EXCLAMATION  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_EURO                                     &kp DE_PIPE       &kp DE_PERCENT    &kp DE_PLUS          &kp DE_EQUAL          &kp DE_DEGREE
-&kp DE_AT_SIGN    &kp DE_AMPERSAND    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_BRACE                               &kp DE_CARET      &kp DE_ASTRK      &kp DE_HASH          &kp DE_DOLLAR         &kp DE_MINUS
-&kp DE_SEMICOLON  &kp DE_UNDERSCORE   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_RIGHT_BRACE                              &kp DE_BACKSLASH  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_DOUBLE_QUOTES  &kp DE_COLON
-                  &none               &none                                                                                                                                  &none                &none
-                                                               &none                                                                                       &trans
-                                                                                         &none               &kp BACKSPACE  &key_repeat  &kp SPACE
-                                                                                         &none               &none          &none        &none
+&none             &kp DE_EXCLAMATION  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_EURO                               &none             &kp DE_PERCENT    &kp DE_PLUS          &kp DE_EQUAL          &kp DE_DEGREE
+&kp DE_AT_SIGN    &kp DE_AMPERSAND    &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_TILDE                              &kp DE_CARET      &kp DE_ASTRK      &kp DE_HASH          &kp DE_DOLLAR         &kp DE_MINUS
+&kp DE_SEMICOLON  &kp DE_UNDERSCORE   &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_PIPE                               &kp DE_BACKSLASH  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_DOUBLE_QUOTES  &kp DE_COLON
+                  &none               &none                                                                                                                            &none                &none
+                                                               &none                                                                                 &trans
+                                                                                         &none         &kp BACKSPACE  &key_repeat  &kp SPACE
+                                                                                         &none         &none          &none        &none
             >;
         };
 
