@@ -9,26 +9,3 @@
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
         ;
 };
-
-
-
-/ {
-    thumb_key_left: thumb_key_left {
-        compatible = "gpio-keys";
-        thumb_key: thumb_key {
-            gpios = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        };
-    };
-
-    gpio_wakeup_trigger_left: gpio_wakeup_trigger_left {
-        compatible = "zmk,gpio-key-wakeup-trigger";
-        wakeup-source;
-        trigger = <&thumb_key>;
-        extra-gpios = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-
-    soft_off_wakeup_sources {
-        compatible = "zmk,soft-off-wakeup-sources";
-        wakeup-sources = <&gpio_wakeup_trigger_left>;
-    };
-};
