@@ -146,9 +146,9 @@
 
         shift {
             bindings = <
-&kp RS(W)  &kp RS(L)           &kp RS(DE_Y)         &kp RS(P)  &kp RS(B)                                      &kp LS(DE_Z)   &kp LS(F)          &kp LS(O)           &kp LS(U)             &kp DE_GRAVE
-&kp RS(C)  &kp RS(R)           &kp RS(S)            &kp RS(T)  &kp RS(G)                                      &kp LS(M)      &kp LS(N)          &kp LS(E)           &kp LS(I)             &kp LS(A)
-&kp RS(Q)  &kp RS(J)           &kp RS(V)            &kp RS(D)  &kp RS(K)                                      &kp LS(X)      &kp LS(H)          &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_QUESTION
+&kp RS(W)  &kp RS(L)           &kp RS(DE_Y)         &kp RS(P)  &kp RS(B)                                      &kp LS(DE_Z)   &kp LS(F)          &kp LS(O)           &kp LS(U)        &kp DE_DOUBLE_QUOTES
+&kp RS(C)  &kp RS(R)           &kp RS(S)            &kp RS(T)  &kp RS(G)                                      &kp LS(M)      &kp LS(N)          &kp LS(E)           &kp LS(I)        &kp LS(A)
+&kp RS(Q)  &kp RS(J)           &kp RS(V)            &kp RS(D)  &kp RS(K)                                      &kp LS(X)      &kp LS(H)          &kp DE_EXCLAMATION  &kp DE_QUESTION  &kp DE_SLASH
            &kp RS(LEFT_ARROW)  &kp RS(RIGHT_ARROW)                                                                                              &kp LS(UP_ARROW)    &kp LS(DOWN)
                                                     &none                                                                    &kp DE_UNDERSCORE
                                                                &kp LS(ENTER)  &kp LS(BACKSPACE)  &key_repeat  &kp LS(SPACE)
