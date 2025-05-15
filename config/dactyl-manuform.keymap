@@ -143,7 +143,7 @@
         base {
             bindings = <
 &kp W  &kp L           &kp DE_Y         &kp P      &kp B                                      &kp DE_Z   &kp F  &kp O         &kp U           &single_quote_morph
-&kp C  &kp R           &kp LEFT_SHIFT   &kp T      &kp G                                      &kp M      &kp N  &kp E         &kp I           &kp A
+&kp C  &kp R           &kp S            &kp T      &kp G                                      &kp M      &kp N  &kp E         &kp I           &kp A
 &kp Q  &kp J           &kp V            &kp D      &kp K                                      &kp X      &kp H  &slash_morph  &comma_morph    &period_morph
        &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                          &kp UP_ARROW  &kp DOWN_ARROW
                                         &kp ENTER                                                        &mo 1
