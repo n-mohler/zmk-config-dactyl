@@ -172,7 +172,7 @@
               &none   &none                                                                            &none  &none
                               &kp ENTER                                                         &mo 1
                                          &kp NUMBER_0     &kp BACKSPACE     &kp TAB  &kp SPACE
-                                         &kp ESCAPE       &kp LEFT_COMMAND  &tog 3   &trans
+                                         &kp ESCAPE       &kp LEFT_COMMAND  &mo 3    &trans
             >;
         };
 
