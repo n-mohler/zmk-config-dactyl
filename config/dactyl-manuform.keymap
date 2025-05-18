@@ -90,6 +90,11 @@
             bindings = <&kp LC(A)>;
             key-positions = <11 13>;
         };
+
+        combo_greeting {
+            bindings = <&greeting>;
+            key-positions = <7 8 9>;
+        };
     };
 
     behaviors {
@@ -103,7 +108,7 @@
         slash_morph: slash_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH_MORPH";
-            bindings = <&kp DE_SLASH>, <&kp DE_EXCLAMATION>;
+            bindings = <&kp DE_SLASH>, <&kp DE_DOUBLE_QUOTES>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -112,7 +117,7 @@
         dash_morph: dash_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_MORPH";
-            bindings = <&kp DE_MINUS>, <&kp DE_QUESTION>;
+            bindings = <&kp DE_MINUS>, <&kp DE_EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -121,7 +126,7 @@
         period_morph: period_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_MORPH";
-            bindings = <&kp PERIOD>, <&kp COMMA>;
+            bindings = <&kp PERIOD>, <&kp DE_QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -134,6 +139,15 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+    };
+
+    macros {
+        greeting: greeting {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_SLASH &kp P &kp SPACE &kp DE_Y &kp O &kp DE_Y &kp O &kp DE_Y &kp O>;
+            label = "GREETING";
         };
     };
 
@@ -156,7 +170,7 @@
             bindings = <
 &kp DE_GRAVE  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_MINUS          &kp DE_PIPE                               &kp DE_CARET  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_DOLLAR     &kp DE_DEGREE
 &kp DE_EURO   &kp DE_ASTERISK   &kp DE_SLASH         &kp DE_EQUAL          &kp DE_AMPERSAND                          &kp DE_HASH   &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_SEMICOLON  &kp DE_DOUBLE_QUOTES
-&kp DE_TILDE  &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT                            &kp DE_AT     &kp DE_COLON             &kp DE_COMMA              &kp DE_PERIOD     &kp DE_BACKSLASH
+&kp DE_TILDE  &kp DE_PLUS       &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_PERCENT                            &kp DE_AT     &kp DE_COLON             &kp DE_PERIOD             &kp DE_COMMA      &kp DE_BACKSLASH
               &none             &none                                                                                                                       &none                     &none
                                                      &kp ENTER                                                                     &trans
                                                                            &kp LEFT_SHIFT    &kp BACKSPACE  &kp TAB  &kp SPACE
