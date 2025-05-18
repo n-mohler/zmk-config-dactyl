@@ -103,16 +103,16 @@
         slash_morph: slash_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH_MORPH";
-            bindings = <&kp DE_SLASH>, <&kp DE_UNDERSCORE>;
+            bindings = <&kp DE_SLASH>, <&kp DE_EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        comma_morph: comma_morph {
+        dash_morph: dash_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_MORPH";
-            bindings = <&kp COMMA>, <&kp DE_EXCLAMATION>;
+            label = "DASH_MORPH";
+            bindings = <&kp DE_MINUS>, <&kp DE_QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -121,7 +121,7 @@
         period_morph: period_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_MORPH";
-            bindings = <&kp PERIOD>, <&kp DE_QUESTION>;
+            bindings = <&kp PERIOD>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -130,7 +130,7 @@
         single_quote_morph: single_quote_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "SINGLE_QUOTE_MORPH";
-            bindings = <&kp DE_SINGLE_QUOTE>, <&kp DE_DOUBLE_QUOTES>;
+            bindings = <&kp DE_SINGLE_QUOTE>, <&kp DE_UNDERSCORE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -142,11 +142,11 @@
 
         base {
             bindings = <
-&kp W  &kp L           &kp DE_Y         &kp P      &kp B                                      &kp DE_Z   &kp F  &kp O         &kp U           &single_quote_morph
-&kp C  &kp R           &kp S            &kp T      &kp G                                      &kp M      &kp N  &kp E         &kp I           &kp A
-&kp Q  &kp J           &kp V            &kp D      &kp K                                      &kp X      &kp H  &slash_morph  &comma_morph    &period_morph
-       &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                          &kp UP_ARROW  &kp DOWN_ARROW
-                                        &kp ENTER                                                        &mo 1
+&kp B  &kp L           &kp D            &kp W      &kp DE_Z                                   &single_quote_morph  &kp F  &kp O          &kp U           &kp J
+&kp N  &kp R           &kp T            &kp S      &kp G                                      &kp DE_Y             &kp H  &kp A          &kp E           &kp I
+&kp Q  &kp X           &kp M            &kp C      &kp V                                      &kp K                &kp P  &period_morph  &dash_morph     &slash_morph
+       &kp LEFT_ARROW  &kp RIGHT_ARROW                                                                                    &kp UP_ARROW   &kp DOWN_ARROW
+                                        &kp ENTER                                                                  &mo 1
                                                    &kp LEFT_SHIFT  &kp BACKSPACE     &kp TAB  &kp SPACE
                                                    &kp ESCAPE      &kp LEFT_COMMAND  &mo 3    &mo 2
             >;
