@@ -146,7 +146,7 @@
         greeting: greeting {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_SLASH &kp P &kp SPACE &kp DE_Y &kp O &kp DE_Y &kp O &kp DE_Y &kp O>;
+            bindings = <&kp ENTER &kp DE_SLASH &kp P &kp SPACE &kp DE_Y &kp O &kp DE_Y &kp O &kp DE_Y &kp O &kp ENTER>;
             label = "GREETING";
         };
     };
